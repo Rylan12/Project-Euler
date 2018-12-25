@@ -50,6 +50,7 @@ if __name__ == '__main__':
         get_multiples(13, 123, 978),
         get_multiples(17, 123, 978)
     ]
+    print(d)
 
     # nums = []
     # for i in range(1023456789, 9876543211):
