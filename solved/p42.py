@@ -17,9 +17,9 @@ def get_word_value(word):
     return total
 
 
-def get_triangle_limit(stop):
+def get_triangle_limit(start, stop):
     triangles = []
-    for i in range(1, stop + 1):
+    for i in range(start, stop + 1):
         triangles.append(int(0.5 * i * (i + 1)))
     return triangles
 
@@ -27,7 +27,7 @@ def get_triangle_limit(stop):
 # 27
 if __name__ == '__main__':
     triangle_words = []
-    triangle_number = get_triangle_limit(30)
+    triangle_number = get_triangle_limit(1, 30)
     for word in words:
         if get_word_value(word) in triangle_number:
             triangle_words.append(word)
